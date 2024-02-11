@@ -1,0 +1,32 @@
+{
+    "name": "d3j-digital/data-transfer-object-laravel",
+    "description": "Convert Eloquent models and collections to a Data Transfer Object. This is an addon to the d3j-digital/data-transfer-object package.",
+    "keywords": ["php", "data transfer object", "dto", "laravel", "symfony", "zend"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/d3j-digital/data-transfer-object-laravel/issues",
+        "source": "https://github.com/d3j-digital/data-transfer-object-laravel"
+    },
+    "authors": [
+        {
+            "name": "Dom McLaughlin",
+            "email": "dom@d3j.digital"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "D3JDigital\\DataTransferObject\\Laravel\\ServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "D3JDigital\\DataTransferObject\\Laravel\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "d3j-digital/data-transfer-object": "^1.0"
+    }
+}
